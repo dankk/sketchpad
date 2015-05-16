@@ -1,0 +1,12 @@
+#container{
+    border: 2px solid black;
+    width:100px;
+    height:100px;
+}
+
+#square{
+    width:20px;
+    height:20px;
+    border:2px solid blue;
+    display: inline-block;
+}
