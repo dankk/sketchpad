@@ -1,13 +1,14 @@
 #container{
     border: 2px solid black;
-    width:432px;
-    height:432px;
+    width:400px;
+    height:400px;
+    margin:auto;
     line-height:0;
 }
 
 .square{
     width:25px;
     height:25px;
-    border:1px solid black;
+    border:none;
     display: inline-block;
 }

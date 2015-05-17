@@ -7,6 +7,11 @@ $(document).ready(function(){
 
     $(".square").hover(function(){
 	$(this).css('background-color','red');
+    }, function(){
+    $(this).fadeOut(200, function(){
+    	$(this).css('background-color','white');
+    	$(this).fadeIn(200);
+    });
     });
 
 });
