@@ -1,17 +1,32 @@
 $(document).ready(function(){
-    for(var i = 0; i < 16; i++){
-	for(var j = 0; j < 16; j++){
-	    $("#container").append("<div class='square'</div>");
+
+    createGrid(2);
+
+     $(document).on('click', '#size', function(){
+	var gridSize = prompt("Enter grid size");
+	createGrid(gridSize);
+    });   
+
+    $(document).on('mouseover', '.square', function(){
+	$(this).css('background-color','red');
+    });
+    
+    $(document).on('mouseleave', '.square', function(){
+	$(this).fadeOut(200, function(){
+    	$(this).css('background-color','white');
+    	$(this).fadeIn(200);
+	});
+    });
+    
+
+});
+
+function createGrid(size){
+    $("#container").empty();
+    for(var i = 0; i < size; i++){
+	for(var j = 0; j < size; j++){
+	    $("#container").append('<div class="square"></div>');
 	}
     }
 
-    $(".square").hover(function(){
-	$(this).css('background-color','red');
-    }, function(){
-    $(this).fadeOut(200, function(){
-    	$(this).css('background-color','white');
-    	$(this).fadeIn(200);
-    });
-    });
-
-});
+};
