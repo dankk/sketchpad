@@ -9,4 +9,5 @@
 .square{
     border:none;
     display: inline-block;
+    float:right;
 }
