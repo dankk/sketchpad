@@ -6,6 +6,10 @@
     line-height:0;
 }
 
+#buttons{
+    text-align: center;
+}
+
 .square{
     border:none;
     display: inline-block;
