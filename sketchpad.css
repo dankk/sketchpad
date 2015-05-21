@@ -11,3 +11,9 @@
     display: inline-block;
     float:right;
 }
+
+.randSquare{
+    border:none;
+    display: inline-block;
+    float:right;
+}
