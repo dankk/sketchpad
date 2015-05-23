@@ -13,9 +13,8 @@ $(document).on('click', '#size', function(){
 });   
 
 $(document).on('click', '#random', function(){
-    createGrid(gridSize, 'randSquare');
+    $('#container > div').toggleClass('randSquare');
 });   
-
 
 $(document).on('mouseover', '.square', function(){
     $(this).css('opacity', '100');
